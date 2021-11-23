@@ -1,6 +1,6 @@
 import glob
-import ktrain
 import datetime
+import ktrain
 
 start_time = datetime.datetime.now()
 
@@ -9,7 +9,6 @@ print("Total number of files:", len(all_files))
 
 model = ktrain.load_predictor("../model")
 print("Sentiment model loaded")
-
 
 cities = {}
 for filename in all_files:
