@@ -7,8 +7,9 @@ start_time = datetime.datetime.now()
 all_files = glob.glob("../data/*.txt") 
 print("Total number of files:", len(all_files))
 
-#model = ktrain.load_predictor("../model")
+model = ktrain.load_predictor("../model")
 print("Sentiment model loaded")
+
 
 cities = {}
 for filename in all_files:
