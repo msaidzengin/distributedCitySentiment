@@ -1,245 +1,326 @@
 {
     "Adana": [
+        1,
         1
     ],
     "Hakkari": [
+        1,
         1
     ],
     "Ardahan": [
-        1
+        1,
+        0
     ],
     "Şırnak": [
+        1,
         1
     ],
     "İzmir": [
+        1,
         1
     ],
     "Bolu": [
+        1,
         1
     ],
     "Muğla": [
-        0
+        0,
+        1
     ],
     "Bitlis": [
-        0
+        0,
+        1
     ],
     "Yozgat": [
+        0,
         0
     ],
     "Gaziantep": [
+        0,
         0
     ],
     "Erzincan": [
+        0,
         0
     ],
     "Çanakkale": [
+        0,
         0
     ],
     "Karabük": [
-        0
-    ],
-    "Aksaray": [
-        0
-    ],
-    "Burdur": [
+        0,
         1
     ],
+    "Aksaray": [
+        0,
+        1
+    ],
+    "Burdur": [
+        1,
+        0
+    ],
     "Osmaniye": [
+        1,
         1
     ],
     "Balıkesir": [
+        1,
         1
     ],
     "Samsun": [
+        0,
         0
     ],
     "Konya": [
-        1
+        1,
+        0
     ],
     "Kars": [
+        1,
         1
     ],
     "Eskişehir": [
+        1,
         1
     ],
     "Tunceli": [
-        1
+        1,
+        0
     ],
     "Kırşehir": [
+        0,
         0
     ],
     "Aydın": [
+        1,
         1
     ],
     "Zonguldak": [
+        1,
         1
     ],
     "Tekirdağ": [
+        1,
         1
     ],
     "Mersin": [
-        1
+        1,
+        0
     ],
     "Tokat": [
+        1,
         1
     ],
     "Kastamonu": [
+        1,
         1
     ],
     "Afyonkarahisar": [
+        0,
         0
     ],
     "Kilis": [
+        1,
         1
     ],
     "Adıyaman": [
+        0,
         0
     ],
     "Artvin": [
+        1,
         1
     ],
     "Yalova": [
-        0
+        0,
+        1
     ],
     "Nevşehir": [
+        1,
         1
     ],
     "Mardin": [
-        0
+        0,
+        1
     ],
     "Erzurum": [
+        1,
         1
     ],
     "Siirt": [
+        1,
         1
     ],
     "Karaman": [
-        0
+        0,
+        1
     ],
     "Kocaeli": [
-        0
+        0,
+        1
     ],
     "Diyarbakır": [
+        0,
         0
     ],
     "Şanlıurfa": [
+        0,
         0
     ],
     "Rize": [
+        1,
         1
     ],
     "Ankara": [
+        1,
         1
     ],
     "Kırıkkale": [
-        0
+        0,
+        1
     ],
     "Sinop": [
+        1,
         1
     ],
     "Bingöl": [
-        1
+        1,
+        0
     ],
     "Amasya": [
+        1,
         1
     ],
     "Niğde": [
+        1,
         1
     ],
     "Elazığ": [
+        1,
         1
     ],
     "Giresun": [
-        0
-    ],
-    "Gümüşhane": [
+        0,
         1
     ],
+    "Gümüşhane": [
+        1,
+        0
+    ],
     "Çorum": [
+        1,
         1
     ],
     "Ordu": [
-        0
-    ],
-    "Kahramanmaraş": [
+        0,
         1
     ],
-    "Hatay": [
+    "Kahramanmaraş": [
+        1,
         0
     ],
+    "Hatay": [
+        0,
+        1
+    ],
     "Van": [
+        0,
         0
     ],
     "Düzce": [
-        0
+        0,
+        1
     ],
     "Iğdır": [
+        1,
         1
     ],
     "Ağrı": [
-        0
+        0,
+        1
     ],
     "Kütahya": [
-        0
+        0,
+        1
     ],
     "Edirne": [
+        0,
         0
     ],
     "Malatya": [
+        1,
         1
     ],
     "Isparta": [
-        0
+        0,
+        1
     ],
     "Bartın": [
+        1,
         1
     ],
     "Çankırı": [
-        0
+        0,
+        1
     ],
     "Muş": [
+        1,
         1
     ],
     "Kırklareli": [
+        1,
         1
     ],
     "Bilecik": [
+        1,
         1
     ],
     "Sivas": [
-        0
+        0,
+        1
     ],
     "Trabzon": [
+        1,
         1
     ],
     "Bayburt": [
-        0
+        0,
+        1
     ],
     "Denizli": [
+        1,
         1
     ],
     "Manisa": [
+        1,
         1
     ],
     "İstanbul": [
+        1,
         1
     ],
     "Uşak": [
-        0
+        0,
+        1
     ],
     "Kayseri": [
+        0,
         0
     ],
     "Bursa": [
-        1
+        1,
+        0
     ],
     "Batman": [
+        1,
         1
     ],
     "Sakarya": [
+        1,
         1
     ],
     "Antalya": [
-        0
+        0,
+        1
     ]
 }
