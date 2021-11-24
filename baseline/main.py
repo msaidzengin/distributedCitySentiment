@@ -15,7 +15,7 @@ for filename in all_files:
     print("Opening file:", filename, city_name)
 
     with open(filename) as myfile:
-        tweets = [next(myfile) for x in range(2)]
+        tweets = [next(myfile) for x in range(1)]
     
     all_tweets[city_name] = tweets
 
@@ -24,14 +24,22 @@ model = ktrain.load_predictor("../model")
 print("Sentiment model loaded")
 
 results = {}
+counter = 0
 for city, tweet in all_tweets.items():
-    print("\nCity:", city)
+
+    counter += 1
     res = []
     for t in tweet:
-        print(t)
-        prediction = model.predict(t)
-        res.append(prediction)
+        try:
+            prediction = model.predict(t)
+            res.append(prediction)
+        except:
+            pass
     results[city] = res
+
+    if counter % 10 == 0:
+        current_time = datetime.datetime.now()
+        print(counter, "Time elapsed:", current_time - start_time)
 
 
 with open('result.json', 'w', encoding='utf-8') as f:
@@ -39,7 +47,7 @@ with open('result.json', 'w', encoding='utf-8') as f:
 
 percents = {}
 for city, res in results.items():
-    percents[city] = sum(res) / len(res)
+    percents[city] = sum(res) / len(res) * 100
 
 with open('percents.json', 'w', encoding='utf-8') as f:
     json.dump(percents, f, ensure_ascii=False, indent=4)
