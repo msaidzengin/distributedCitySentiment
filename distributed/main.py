@@ -1,11 +1,8 @@
-from ktrain.text.ner import predictor
 from pyspark import SparkContext
 from predictor import CustomPredictor
-
 import glob
 
 if __name__ == '__main__':
-
 
     all_files = glob.glob("../data/*.txt") 
     print("Total number of files:", len(all_files))
@@ -20,16 +17,14 @@ if __name__ == '__main__':
             tweets = [next(myfile) for x in range(50)]
         
         all_tweets[city_name] = tweets
-
-        
     
     predictor = CustomPredictor()
-
     sc = SparkContext("local", "primes")
 
     for city, tweet in all_tweets.items():
 
-        nums = sc.parallelize(tweet, 2)
-        print(nums.filter(predictor.predict).count())
-
+        nums = sc.parallelize(tweet, 4)
+        nums.filter(predictor.predict).count()
         break
+
+    predictor.show_results()
