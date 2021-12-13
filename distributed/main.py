@@ -10,8 +10,6 @@ def chunks(lst, n):
 
 if __name__ == '__main__':
 
-    start_time = datetime.datetime.now()
-
     all_files = glob.glob("../data/*.txt") 
     print("Total number of files:", len(all_files))
 
@@ -22,7 +20,7 @@ if __name__ == '__main__':
         print("Opening file:", filename, city_name)
 
         with open(filename) as myfile:
-            tweets = [next(myfile) for x in range(5000)]
+            tweets = [next(myfile) for x in range(10)]
         
         all_tweets[city_name] = tweets
     
@@ -34,6 +32,7 @@ if __name__ == '__main__':
 
    
     nums = sc.parallelize(tw_list, 4)
+    start_time = datetime.datetime.now()
     nums.filter(predictor.predict).count()
 
     end_time = datetime.datetime.now()
