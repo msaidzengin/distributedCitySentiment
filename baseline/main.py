@@ -1,6 +1,6 @@
 import glob
 import datetime
-import ktrain
+import pickle
 import json
 
 start_time = datetime.datetime.now()
@@ -20,8 +20,15 @@ for filename in all_files:
     all_tweets[city_name] = tweets
 
 
-model = ktrain.load_predictor("../model")
-print("Sentiment model loaded")
+#Vectorizer
+with open('../model/tfidfmodel.pickle', 'rb') as f:
+    vectorizer = pickle.load(f)
+    
+#Model
+with open('../model/classifier.pickle', 'rb') as f:
+    classifier = pickle.load(f)
+
+print("model loaded")
 
 results = {}
 counter = 0
@@ -31,7 +38,7 @@ for city, tweet in all_tweets.items():
     for t in tweet:
         counter += 1
         try:
-            prediction = model.predict(t)
+            prediction = classifier.predict(vectorizer.transform([t]).toarray())
             res.append(prediction)
         except:
             pass
