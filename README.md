@@ -24,4 +24,4 @@
 | 1024             | xxxx dakika |
 
 
-![Mutluluk Haritası](data_stats.png "Mutluluk Haritası")
+![Mutluluk Haritası](sentiment_result.png "Mutluluk Haritası")
