@@ -5,5 +5,4 @@ class CustomPredictor:
 
     def predict(self, data):
         result = self.predictor.predict(data)
-        print("Result:", result, "len data:", len(data))
         return result

@@ -1,8 +1,8 @@
-# Distributed City Sentiment
-# Şehir Bazlı Dağıtık Duygu Analizi
+### Distributed City Sentiment
+### Şehir Bazlı Dağıtık Duygu Analizi
 
 
-### Sonuçlar
+# Hızlandırma Sonuçları
 | Partition Sayısı | 10.000 Veri | 50.000 Veri |
 | ---------------- | ----------- | ----------- |
 | 1                |  621        |  5782       |
@@ -20,8 +20,8 @@
 
 | Partition Sayısı | 16.116.035 Veri |
 | ---------------- | ----------- |
-| 1                | 16.116.035 dakika |
-| 1024             | xxxx dakika |
+| 1                | 1.093.560 saniye |
+| 1024             |  2282 saniye |
 
-
+# Duygu Analiz Sonuçları
 ![Mutluluk Haritası](sentiment_result.png "Mutluluk Haritası")
