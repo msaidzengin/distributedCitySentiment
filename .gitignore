@@ -1,2 +1,8 @@
-model
-**txt
+model/
+*.txt
+
+__pycache__/
+*.py[cod]
+.idea/
+.vscode/
+.DS_Store

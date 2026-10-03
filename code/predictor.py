@@ -1,6 +1,7 @@
 import ktrain
-class CustomPredictor:
 
+
+class CustomPredictor:
     predictor = ktrain.load_predictor("../model")
 
     def predict(self, data):
